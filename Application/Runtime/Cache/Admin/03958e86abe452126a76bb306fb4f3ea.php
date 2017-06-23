@@ -4,8 +4,8 @@
 <title>ECSHOP 管理中心 - 商品品牌 </title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/Public/Admin/Styles/general.css" rel="stylesheet" type="text/css" />
-<link href="/Public/Admin/Styles/main.css" rel="stylesheet" type="text/css" />
+<link href="/mymall/Public/Admin/Styles/general.css" rel="stylesheet" type="text/css" />
+<link href="/mymall/Public/Admin/Styles/main.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <h1>
@@ -16,7 +16,7 @@
 </h1>
 <div class="form-div">
     <form action="" name="searchForm">
-    <img src="/Public/Admin/Images/icon_search.gif" width="26" height="22" border="0" alt="search" />
+    <img src="/mymall/Public/Admin/Images/icon_search.gif" width="26" height="22" border="0" alt="search" />
     <input type="text" name="brand_name" size="15" />
     <input type="submit" value=" 搜索 " class="button" />
     </form>
@@ -35,7 +35,7 @@
             </tr>
             <?php if(is_array($brand_data)): foreach($brand_data as $key=>$d): ?><tr>
                 <td class="first-cell">
-                    <span style="float:right"><a href="" target="_brank"><img src="/Public/Uploads/<?php echo ($d["brand_logo"]); ?>" width="16" height="16" border="0" alt="品牌LOGO" /></a></span>
+                    <span style="float:right"><a href="" target="_brank"><img src="/mymall/Public/Uploads/<?php echo ($d["brand_logo"]); ?>" width="16" height="16" border="0" alt="品牌LOGO" /></a></span>
                     <span><?php echo ($d["brand_name"]); ?></span>
                 </td>
                 <td align="center">
@@ -46,7 +46,7 @@
                 </td>
                 <td align="center"><?php echo ($d["brand_description"]); ?></td>
                 <td align="center"><span><?php echo ($d["brand_sort"]); ?></span></td>
-                <td align="center"><img src="/Public/Admin/Images/<?php if($d["brand_status"] == 1): ?>yes.gif <?php else: ?>no.gif<?php endif; ?>" /></td>
+                <td align="center"><img src="/mymall/Public/Admin/Images/<?php if($d["brand_status"] == 1): ?>yes.gif <?php else: ?>no.gif<?php endif; ?>" /></td>
                 <td align="center">
                 <a href="<?php echo U('brandEdit','id='.$d[id]);?>" title="编辑">编辑</a> |
                 <a href="javascript:void(0);" title="编辑" class="remove" data-id="<?php echo ($d["id"]); ?>">移除</a>
@@ -78,7 +78,7 @@
 <div id="footer">
 共执行 3 个查询，用时 0.021251 秒，Gzip 已禁用，内存占用 2.194 MB<br />
 版权所有 &copy; 2005-2012 上海商派网络科技有限公司，并保留所有权利。</div>
-<script src="/Public/Admin/Js/jquery-1.8.3.min.js"></script>
+<script src="/mymall/Public/Admin/Js/jquery-1.8.3.min.js"></script>
 <script>
         $(function(){
             $('.remove').live('click',function(){

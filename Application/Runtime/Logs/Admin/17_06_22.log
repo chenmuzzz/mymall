@@ -9042,3 +9042,181 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002745s ]
 INFO: [ app_end ] --END-- [ RunTime:0.003192s ]
 
+[ 2017-06-22T23:55:55+08:00 ] 127.0.0.1 /mymall/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000548s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2017-06-22T23:55:55+08:00 ] 127.0.0.1 /mymall/index.php/Admin/Index/top.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2017-06-22T23:55:55+08:00 ] 127.0.0.1 /mymall/index.php/Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001145s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-06-22T23:55:55+08:00 ] 127.0.0.1 /mymall/index.php/Admin/Index/menu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000641s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000956s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2017-06-22T23:55:57+08:00 ] 127.0.0.1 /mymall/index.php/Admin/goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-06-22T23:56:04+08:00 ] 127.0.0.1 /mymall/index.php/Admin/Category/categoryList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.2771s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\c632d2e49df9ad5c68635901312e5643.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\c632d2e49df9ad5c68635901312e5643.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\c632d2e49df9ad5c68635901312e5643.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\c632d2e49df9ad5c68635901312e5643.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\c632d2e49df9ad5c68635901312e5643.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\c632d2e49df9ad5c68635901312e5643.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\c632d2e49df9ad5c68635901312e5643.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\c632d2e49df9ad5c68635901312e5643.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\c632d2e49df9ad5c68635901312e5643.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\c632d2e49df9ad5c68635901312e5643.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\c632d2e49df9ad5c68635901312e5643.php 第 39 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\c632d2e49df9ad5c68635901312e5643.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2017-06-22T23:56:06+08:00 ] 127.0.0.1 /mymall/index.php/Admin/goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-06-22T23:56:12+08:00 ] 127.0.0.1 /mymall/index.php/Admin/goods/goodsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+
+[ 2017-06-22T23:56:15+08:00 ] 127.0.0.1 /mymall/index.php/Admin/goods/goodsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+
+[ 2017-06-22T23:56:18+08:00 ] 127.0.0.1 /mymall/index.php/Admin/brand/brandList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `brand` [ RunTime:0.1447s ]
+SQL: SELECT a.*,b.cate_name FROM brand a left join category as b on a.cate_id=b.id   [ RunTime:0.0614s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: val F:\TPblog\mymall\Application\Runtime\Cache\Admin\03958e86abe452126a76bb306fb4f3ea.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\03958e86abe452126a76bb306fb4f3ea.php 第 51 行.
+NOTIC: [8] Undefined variable: val F:\TPblog\mymall\Application\Runtime\Cache\Admin\03958e86abe452126a76bb306fb4f3ea.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\03958e86abe452126a76bb306fb4f3ea.php 第 51 行.
+NOTIC: [8] Undefined variable: val F:\TPblog\mymall\Application\Runtime\Cache\Admin\03958e86abe452126a76bb306fb4f3ea.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\03958e86abe452126a76bb306fb4f3ea.php 第 51 行.
+NOTIC: [8] Undefined variable: val F:\TPblog\mymall\Application\Runtime\Cache\Admin\03958e86abe452126a76bb306fb4f3ea.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\03958e86abe452126a76bb306fb4f3ea.php 第 51 行.
+NOTIC: [8] Undefined variable: val F:\TPblog\mymall\Application\Runtime\Cache\Admin\03958e86abe452126a76bb306fb4f3ea.php 第 45 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' F:\TPblog\mymall\Application\Runtime\Cache\Admin\03958e86abe452126a76bb306fb4f3ea.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000983s ]
+

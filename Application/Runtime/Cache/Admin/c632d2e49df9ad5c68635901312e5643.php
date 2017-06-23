@@ -5,9 +5,9 @@
 <title>ECSHOP 管理中心 - 商品分类 </title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/Public/Admin/Styles/general.css" rel="stylesheet" type="text/css" />
-<link href="/Public/Admin/Styles/main.css" rel="stylesheet" type="text/css" />
-    <script src="/Public/Admin/Js/jquery-1.8.3.min.js"></script>
+<link href="/mymall/Public/Admin/Styles/general.css" rel="stylesheet" type="text/css" />
+<link href="/mymall/Public/Admin/Styles/main.css" rel="stylesheet" type="text/css" />
+    <script src="/mymall/Public/Admin/Js/jquery-1.8.3.min.js"></script>
 </head>
 <body>
 <h1>
@@ -28,12 +28,12 @@
             </tr>
             <?php if(is_array($cate_data)): foreach($cate_data as $key=>$d): ?><tr align="center"  class="level<?php echo ($d["level"]); ?>" rid="<?php echo ($d["id"]); ?>" pid="<?php echo ($d["cate_pid"]); ?>">
                 <td align="left" class="first-cell" >
-                    <?php echo (str_repeat('&nbsp;',$d["level"]*8)); ?><img src="/Public/Admin/Images/menu_minus.gif" width="9" height="9" border="0" style="margin-left:0em" />
+                    <?php echo (str_repeat('&nbsp;',$d["level"]*8)); ?><img src="/mymall/Public/Admin/Images/menu_minus.gif" width="9" height="9" border="0" style="margin-left:0em" />
                 <span><a href="javascript:void(0)"><?php echo ($d["cate_name"]); ?></a></span>
                 </td>
 
-                <td width="15%"><img src="/Public/Admin/Images/<?php if($d["is_show"] == 1): ?>yes.gif <?php else: ?>no.gif<?php endif; ?>" /></td>
-                <td width="15%"><img src="/Public/Admin/Images/<?php if($d["cate_status"] == 1): ?>yes.gif<?php else: ?>no.gif<?php endif; ?>"  /></td>
+                <td width="15%"><img src="/mymall/Public/Admin/Images/<?php if($d["is_show"] == 1): ?>yes.gif <?php else: ?>no.gif<?php endif; ?>" /></td>
+                <td width="15%"><img src="/mymall/Public/Admin/Images/<?php if($d["cate_status"] == 1): ?>yes.gif<?php else: ?>no.gif<?php endif; ?>"  /></td>
                 <td width="15%" align="center"><span><?php echo ($d["cate_sort"]); ?></span></td>
                 <td width="30%" align="center">
                 <a href="<?php echo U('categoryEdit','cate_id='.$d[id]);?>">编辑</a> |
@@ -77,9 +77,9 @@
                     }
                 })
                 if(a==1){
-                    _this.find('img:first').attr('src','/Public/Admin/Images/menu_plus.gif');
+                    _this.find('img:first').attr('src','/mymall/Public/Admin/Images/menu_plus.gif');
                 }else{
-                    _this.find('img:first').attr('src','/Public/Admin/Images/menu_minus.gif');
+                    _this.find('img:first').attr('src','/mymall/Public/Admin/Images/menu_minus.gif');
                 }
             })
         }
