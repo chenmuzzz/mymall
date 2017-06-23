@@ -53,7 +53,7 @@ class GoodsController extends Controller
         $this->display();
     }
     public function goodsList(){
-        if(IS_POST){ fFWDA
+        if(IS_POST){
             $str=I('str');
             //将brand all id字符串处理为数组
             $brand=I('brand');
