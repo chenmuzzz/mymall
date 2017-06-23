@@ -16,6 +16,9 @@ class BrandController extends Controller
     public function brandAdd(){
         if(IS_POST){
             $data=I('post.');
+                if($_FILES['brand_logo']['name']!=''){
+                    $data['brand_logo']=$this->UploadLgdo();
+                }
             $res=M('brand')->add($data);
             if($res){
                 $this->success('品牌添加成功',U('brandList'));
@@ -48,13 +51,7 @@ class BrandController extends Controller
         if(IS_POST){
             $data=I('post.');
             if($_FILES['brand_logo']['name']!=''){
-                $res=uploadFile();
-                $a=$res['brand_logo']['savepath'].$res['brand_logo']['savename'];
-                $image=new \Think\Image();
-                $image->open(UPLOAD.$a);
-                $logo_path=$res['brand_logo']['savepath'].'_logo'.$res['brand_logo']['savename'];
-                $image->thumb(50,50)->save(UPLOAD.$logo_path);
-                $data['brand_logo']=$logo_path;
+                $data['brand_logo']=$this->UploadLgdo();
             }
 
             $res=M('brand')->save($data);
@@ -103,6 +100,17 @@ class BrandController extends Controller
         }else{
             $this->error('删除失败');
         }
+    }
+
+    //生成 上传logo图片
+    public function UploadLgdo(){
+        $res=uploadFile();
+        $a=$res['brand_logo']['savepath'].$res['brand_logo']['savename'];
+        $image=new \Think\Image();
+        $image->open(UPLOAD.$a);
+        $logo_path=$res['brand_logo']['savepath'].'_logo'.$res['brand_logo']['savename'];
+        $image->thumb(50,50)->save(UPLOAD.$logo_path);
+        return $logo_path;
     }
 
 }
